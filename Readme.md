@@ -19,6 +19,8 @@ pip install -r requirements.txt
 │   ├── controller          # 控制层
 │   │   ├── __init__.py     # api命名空间注册
 │   │   └── demo.py
+│   ├── csv                 # csv
+│   │   └── index.py        # csv索引
 │   ├── model               # 实体层
 │   │   └── demo.py
 │   └── service             # 业务逻辑层
