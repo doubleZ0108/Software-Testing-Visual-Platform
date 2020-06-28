@@ -14,3 +14,7 @@ class ShowCSV:
         temp_dict = json.loads(temp_json, object_pairs_hook=OrderedDict)
         print(temp_dict)
         return temp_dict
+
+    @staticmethod
+    def get_csv_dir():
+        return csv_dir

@@ -1,2 +1,16 @@
-TestCaseID,AnnualSales,LeaveDays,CashtoAccountRate,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
-0,100,0,0.7,16.67,16.67,True,2020-06-16 21:29:15,anonymous
+TestCaseID,AnnualSales,LeaveDays,CashtoAccountRate,ExpectedOutput1,ActualOutput1,ExpectedOutput2,ActualOutput2,Correctness,Path,ConditionGruop,Condition,Time,TesterName
+1,230,3,0.7,7,7,32.86,32.86,True,MACFHI,"15, 1, 7","T1, T2, T4, F5, F6, F7",2020-06-28 17:35:22,anonymous
+2,230,3,0.5,no commission,no commission,no commission,no commission,True,MACGI,"15, 1, 8","T1, T2, F4, F5, F6, F7",2020-06-28 17:35:22,anonymous
+3,230,11,0.7,6,6,38.33,38.33,True,MABEHI,"15, 2, 5","T1, F2, T3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+4,230,11,0.9,5,5,46.0,46.0,True,MABDHI,"15, 2, 6","T1, F2, F3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+5,180,3,0.7,6,6,30.0,30.0,True,MABEHI,"15, 3, 5","F1, T2, T3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+6,180,3,0.9,5,5,36.0,36.0,True,MABDHI,"15, 3, 6","F1, T2, F3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+7,180,11,0.7,6,6,30.0,30.0,True,MABEHI,"15, 4, 5","F1, F2, T3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+8,180,11,0.9,5,5,36.0,36.0,True,MABDHI,"15, 4, 6","F1, F2, F3, F5, F6, F7",2020-06-28 17:35:22,anonymous
+9,-100,-3,-0.1,error,error,error,error,True,MN,9,"T5, T6, T7",2020-06-28 17:35:22,anonymous
+10,-100,-3,0.1,error,error,error,error,True,MN,10,"T5, T6, F7",2020-06-28 17:35:22,anonymous
+11,-100,3,0.1,error,error,error,error,True,MN,11,"T5, F6, F7",2020-06-28 17:35:22,anonymous
+12,-100,3,-0.1,error,error,error,error,True,MN,12,"T5, F6, T7",2020-06-28 17:35:22,anonymous
+13,100,-3,-0.1,error,error,error,error,True,MN,13,"F5, T6, T7",2020-06-28 17:35:22,anonymous
+14,100,-3,-0.1,error,error,error,error,True,MN,14,"F5, T6, F7",2020-06-28 17:35:22,anonymous
+15,100,3,-0.1,error,error,error,error,True,MN,16,"F5, F6, T7",2020-06-28 17:35:22,anonymous

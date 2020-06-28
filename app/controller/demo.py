@@ -38,3 +38,5 @@ class Cat(Resource):
         if result is None:
             api.abort(404)
         return result
+
+

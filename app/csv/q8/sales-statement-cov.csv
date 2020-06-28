@@ -1,2 +1,5 @@
-TestCaseID,AnnualSales,LeaveDays,CashtoAccountRate,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
-0,100,0,0.7,16.67,16.67,True,2020-06-16 21:29:36,anonymous
+TestCaseID,AnnualSales,LeaveDays,CashtoAccountRate,ExpectedOutput1,ActualOutput1,ExpectedOutput2,ActualOutput2,Correctness,Path,Time,TesterName
+1,230,3,0.7,7,7,32.86,32.86,True,MACFHI,2020-06-28 17:32:15,anonymous
+2,230,3,0.5,no commission,no commission,no commission,no commission,True,MACGI,2020-06-28 17:32:15,anonymous
+3,180,3,0.7,6,6,30.0,30.0,True,MABEHI,2020-06-28 17:32:15,anonymous
+4,180,7,0.9,5,5,36.0,36.0,True,MABDHI,2020-06-28 17:32:15,anonymous

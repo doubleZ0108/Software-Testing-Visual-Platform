@@ -21,6 +21,7 @@ def df_update(df, csv_path, actual_outputs, tester_name):
         for i in range(0, output_num):
             ac_label = 'ActualOutput' + str(i + 1)
             ex_label = 'ExpectedOutput' + str(i + 1)
+            df[ac_label] = actual_outputs[i]
             df[ac_label] = df[ac_label].astype(str)
             df.loc[df[ex_label] != df[ac_label], 'Correctness'] = False
     df['Correctness'] = df['Correctness'].fillna(True)

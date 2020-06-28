@@ -16,3 +16,10 @@ class CalenderBasic(Resource):
         展示CSV表格
         """
         return ShowCSV.get_csv(api.payload)
+
+    @api.doc('Get Problem Item')
+    def get(self):
+        """
+        获得问题项目
+        """
+        return ShowCSV.get_csv_dir()
