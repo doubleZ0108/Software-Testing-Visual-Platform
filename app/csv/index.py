@@ -37,3 +37,11 @@ sales = {
     'judge-condition': BASE_DIR + '/q8/sales-judge-condition-cov.csv',
     'condition-combination': BASE_DIR + '/q8/sales-condition-combination-cov.csv'
 }
+
+csv_dir2 = {
+    'calendar': calendar,
+    'triangle': triangle,
+    'commission': commission,
+    'charge': charge,
+    'sales': sales
+}

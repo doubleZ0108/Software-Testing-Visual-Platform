@@ -1,3 +1,4 @@
+from app.csv.index import csv_dir2
 from app.csv.index import csv_dir
 import pandas as pd
 import json
@@ -8,7 +9,7 @@ class ShowCSV:
     @staticmethod
     def get_csv(request):
         problem, method_type = request['problem'], request['method_type']
-        df = pd.read_csv(csv_dir[problem][method_type])
+        df = pd.read_csv(csv_dir2[problem][method_type])
         temp_json = df.to_json(orient='records')
         # print(temp_json)
         temp_dict = json.loads(temp_json, object_pairs_hook=OrderedDict)
