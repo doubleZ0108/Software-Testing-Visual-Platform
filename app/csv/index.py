@@ -7,7 +7,8 @@ csv_dir = {
     'triangle': ['boundary', 'equivalence'],
     'commission': ['boundary'],
     'charge': ['boundary', 'equivalence', 'decision'],
-    'sales': ['statement', 'judge', 'condition', 'judge-condition', 'condition-combination']
+    'sales': ['statement', 'judge', 'condition', 'judge-condition', 'condition-combination'],
+    'printer': ['transition-tree']
 }
 
 calendar = {
@@ -41,10 +42,16 @@ sales = {
     'condition-combination': BASE_DIR + '/q8/sales-condition-combination-cov.csv'
 }
 
+printer = {
+    'printer': BASE_DIR + '/q6/printer-transition-tree.csv',
+    'printer-robust': BASE_DIR + '/q6/printer-transition-tree.csv'
+}
+
 csv_dir2 = {
     'calendar': calendar,
     'triangle': triangle,
     'commission': commission,
     'charge': charge,
-    'sales': sales
+    'sales': sales,
+    'printer': printer
 }
