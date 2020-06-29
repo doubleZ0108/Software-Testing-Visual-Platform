@@ -36,7 +36,6 @@ class question8:
         for i in range(0, len(df)):
             arg_list = df.iloc[i, arg_start:arg_end].values.tolist()
             output_1, output_2 = sales_atom(arg_list)
-            print(output_1, output_2)
             output1.append(output_1)
             output2.append(output_2)
         return df_update(df=df, csv_path=csv_path, actual_outputs=[output1, output2], tester_name='anonymous')
