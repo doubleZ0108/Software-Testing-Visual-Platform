@@ -7,6 +7,8 @@ from app.common.commonUtil import df_update, df_read
 def calendar_atom(arg_list):
     v_list_new = [str(x) for x in arg_list]
     year, month, day = arg_list[0], arg_list[1], arg_list[2]
+    if (year < 2000 or year > 2100) and (month < 1 or month > 12) and (day < 1 or day > 31):
+        return 'Illegal Case'
     if year < 2000 or year > 2100:
         return 'Year Exceed'
     if month < 1 or month > 12:

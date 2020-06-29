@@ -1,36 +1,36 @@
 TestCaseID,Year,Month,Day,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
-0,2008,4,5,2008/4/6,,,,
-1,2019,3,28,2019/3/29,,,,
-2,2020,2,29,2020/3/1,,,,
-3,2017,12,30,2017/12/31,,,,
-4,2012,2,31,day is out of range for month,,,,
-5,1999,4,5,Year Exceed,,,,
-6,1998,3,28,Year Exceed,,,,
-7,1999,2,29,Year Exceed,,,,
-8,300,12,30,Year Exceed,,,,
-9,1900,2,31,Year Exceed,,,,
-10,2101,4,5,Year Exceed,,,,
-11,2102,3,28,Year Exceed,,,,
-12,2222,2,29,Year Exceed,,,,
-13,2500,12,30,Year Exceed,,,,
-14,10000,2,31,Year Exceed,,,,
-15,2008,0,5,Month Exceed,,,,
-16,2019,-1,28,Month Exceed,,,,
-17,2020,-100,29,Month Exceed,,,,
-18,2017,-3,30,Month Exceed,,,,
-19,2012,-6,31,Month Exceed,,,,
-20,2008,13,5,Month Exceed,,,,
-21,2019,100,28,Month Exceed,,,,
-22,2020,15,29,Month Exceed,,,,
-23,2017,16,30,Month Exceed,,,,
-24,2012,1000,31,Month Exceed,,,,
-25,2008,4,0,Day Exceed,,,,
-26,2019,3,-1,Day Exceed,,,,
-27,2020,2,-100,Day Exceed,,,,
-28,2017,12,-2,Day Exceed,,,,
-29,2012,2,-5,Day Exceed,,,,
-30,2008,4,32,Day Exceed,,,,
-31,2019,3,33,Day Exceed,,,,
-32,2020,2,50,Day Exceed,,,,
-33,2017,12,100,Day Exceed,,,,
-34,2012,2,1000,Day Exceed,,,,
+0,2008,4,5,2008-04-06,2008-04-06,True,2020-06-29 15:17:19,anonymous
+1,2019,3,28,2019-03-29,2019-03-29,True,2020-06-29 15:17:19,anonymous
+2,2020,2,29,2020-03-01,2020-03-01,True,2020-06-29 15:17:19,anonymous
+3,2017,12,30,2017-12-31,2017-12-31,True,2020-06-29 15:17:19,anonymous
+4,2012,2,31,day is out of range for month,day is out of range for month,True,2020-06-29 15:17:19,anonymous
+5,1999,4,5,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+6,1998,3,28,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+7,1999,2,29,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+8,300,12,30,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+9,1900,2,31,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+10,2101,4,5,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+11,2102,3,28,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+12,2222,2,29,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+13,2500,12,30,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+14,10000,2,31,Year Exceed,Year Exceed,True,2020-06-29 15:17:19,anonymous
+15,2008,0,5,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+16,2019,-1,28,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+17,2020,-100,29,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+18,2017,-3,30,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+19,2012,-6,31,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+20,2008,13,5,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+21,2019,100,28,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+22,2020,15,29,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+23,2017,16,30,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+24,2012,1000,31,Month Exceed,Month Exceed,True,2020-06-29 15:17:19,anonymous
+25,2008,4,0,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+26,2019,3,-1,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+27,2020,2,-100,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+28,2017,12,-2,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+29,2012,2,-5,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+30,2008,4,32,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+31,2019,3,33,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+32,2020,2,50,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+33,2017,12,100,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
+34,2012,2,1000,Day Exceed,Day Exceed,True,2020-06-29 15:17:19,anonymous
