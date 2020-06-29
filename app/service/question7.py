@@ -36,18 +36,18 @@ def charge_atom_v2(arg_list):
         return 'error'
     if talk_time_month <= 60 and unpaid_num_year <= 1:
         cost += talk_time_month * cost_per_min * (1 - 0.01)
-    elif talk_time_month <= 120 and unpaid_num_year <= 2:
+    elif 60 < talk_time_month <= 120 and unpaid_num_year <= 2:
         cost += talk_time_month * cost_per_min * (1 - 0.015)
-    elif talk_time_month <= 180 and unpaid_num_year <= 3:
+    elif 120 < talk_time_month <= 180 and unpaid_num_year <= 3:
         cost += talk_time_month * cost_per_min * (1 - 0.02)
-    elif talk_time_month <= 300 and unpaid_num_year <= 3:
+    elif 180 < talk_time_month <= 300 and unpaid_num_year <= 3:
         cost += talk_time_month * cost_per_min * (1 - 0.025)
     elif talk_time_month > 300 and unpaid_num_year <= 6:
         cost += talk_time_month * cost_per_min * (1 - 0.03)
     else:
         cost += talk_time_month * cost_per_min
     cost += unpaid_cost_across_year * 0.05
-    return float('%.2f' % cost)
+    return cost
 
 
 code_v = {
