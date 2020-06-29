@@ -118,7 +118,5 @@ class question6:
     @staticmethod
     def printer_method_test(request):
         arg_list = request['command']
-        state = printer_atom(arg_list)
-        return {'state': state}
-
-question6.printer('printer')
+        state = printer_atom(arg_list).capitalize()
+        return {'state': state_dir[state], 'description': state}
