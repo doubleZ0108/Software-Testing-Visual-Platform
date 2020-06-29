@@ -21,7 +21,7 @@ class Triangle(Resource):
 
 
 @api.route('/calendar/<method_type>')
-@api.param('method_type', 'boundary | equivalence')
+@api.param('method_type', 'boundary | equivalence-weak-general ｜ equivalence-strong-general ｜ equivalence-weak-robust ｜ equivalence-strong-robust')
 @api.response(404, 'Method not found')
 class Calendar(Resource):
     @api.doc('Calendar Problem')

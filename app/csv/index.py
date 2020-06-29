@@ -3,7 +3,7 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 
 csv_dir = {
-    'calendar': ['boundary', 'equivalence-weak-general', 'equivalence-strong-general', 'equivalence-weak-robust', 'equivalence-strong-robust'],
+    'calendar': ['boundary', 'equivalence-weak-general', 'equivalence-strong-general', 'equivalence-weak-robust', 'equivalent-strong-robust'],
     'triangle': ['boundary', 'equivalence'],
     'commission': ['boundary'],
     'charge': ['boundary', 'equivalence', 'decision'],
@@ -13,9 +13,9 @@ csv_dir = {
 
 calendar = {
     'boundary': BASE_DIR + '/q1/calendar-boundary.csv',
-    'equivalence-weak-general': BASE_DIR + '/q1/calendar-equivalent-week-general.csv',
+    'equivalence-weak-general': BASE_DIR + '/q1/calendar-equivalent-weak-general.csv',
     'equivalence-strong-general': BASE_DIR + '/q1/calendar-equivalent-strong-general.csv',
-    'equivalence-weak-robust': BASE_DIR + '/q1/calendar-equivalent-week-robust.csv',
+    'equivalence-weak-robust': BASE_DIR + '/q1/calendar-equivalent-weak-robust.csv',
     'equivalence-strong-robust': BASE_DIR + '/q1/calendar-equivalent-strong-robust.csv'
 }
 
