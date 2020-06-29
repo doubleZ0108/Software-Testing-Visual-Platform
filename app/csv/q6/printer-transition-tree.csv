@@ -1,6 +1,6 @@
-TestCaseID,Command,ExpectedOutput1,ActualOutput1,Correctness,Time,TesterName
-0,SE,End,,,,
-1,S12,1,,,,
-2,S133,3,,,,
-3,S134,2,,,,
-4,S11,2,,,,
+TestCaseID,Command,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
+0,SE,End,End,True,2020-06-29 16:41:13,anonymous
+1,S12,1,1,True,2020-06-29 16:41:13,anonymous
+2,S133,3,3,True,2020-06-29 16:41:13,anonymous
+3,S134,2,2,True,2020-06-29 16:41:13,anonymous
+4,S11,2,2,True,2020-06-29 16:41:13,anonymous

@@ -9,9 +9,20 @@ from app.csv.index import printer as printer_index
 
 @author: doubleZ
 
+@modify: dasein
+
 @create: 2020/06/29 
 '''
 from state_machine import State, Event, acts_as_state_machine, after, before, InvalidStateTransition
+
+state_dir = {
+    'Empty': 1,
+    'Printing': 2,
+    'Alarming': 3,
+    'End': 'End',
+    'Failure': 'Failure'
+}
+
 
 @acts_as_state_machine
 class Printer:
@@ -45,11 +56,13 @@ class Printer:
     alarm_check_printer_end = Event(from_states=alarming, to_state=printing)
     general_check_printer_end = Event(from_states=(empty, printing), to_state=failure)
 
+
 def transition(printer, event):
     try:
         event()
     except InvalidStateTransition as err:
         print("Failure")
+
 
 def printer_atom(arg_list):
     command = arg_list[0]
@@ -88,7 +101,7 @@ def printer_atom(arg_list):
     return final_state
 
 
-class question1:
+class question6:
     def __init__(self):
         pass
 
@@ -99,9 +112,13 @@ class question1:
         output1 = []
         for i in range(0, len(df)):
             arg_list = df.iloc[i, arg_start:arg_end].values.tolist()
-            output1.append(printer_atom(arg_list))
+            output1.append(state_dir[printer_atom(arg_list).capitalize()])
         return df_update(df=df, csv_path=csv_path, actual_outputs=[output1], tester_name='anonymous')
 
-if __name__ == '__main__':
-    command = ['S133']
-    print(printer_atom(command))
+    @staticmethod
+    def printer_method_test(request):
+        arg_list = request['command']
+        state = printer_atom(arg_list)
+        return {'state': state}
+
+question6.printer('printer')

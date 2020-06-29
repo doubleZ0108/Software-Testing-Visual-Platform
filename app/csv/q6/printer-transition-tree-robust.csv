@@ -1,14 +1,14 @@
-TestCaseID,Command,ExpectedOutput1,ActualOutput1,Correctness,Time,TesterName
-0,SE,End,,,,
-1,S2,Failure,,,,
-2,S3,Failure,,,,
-3,S4,Failure,,,,
-4,S12,1,,,,
-5,S11,2,,,,
-6,S14,Failure,,,,
-7,S1E,Failure,,,,
-8,S131,Failure,,,,
-9,S133,3,,,,
-10,S134,2,,,,
-11,S132,Failure,,,,
-12,S13E,Failure,,,,
+TestCaseID,Command,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
+0,SE,End,End,True,2020-06-29 16:40:57,anonymous
+1,S2,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+2,S3,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+3,S4,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+4,S12,1,1,True,2020-06-29 16:40:57,anonymous
+5,S11,2,2,True,2020-06-29 16:40:57,anonymous
+6,S14,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+7,S1E,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+8,S131,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+9,S133,3,3,True,2020-06-29 16:40:57,anonymous
+10,S134,2,2,True,2020-06-29 16:40:57,anonymous
+11,S132,Failure,Failure,True,2020-06-29 16:40:57,anonymous
+12,S13E,Failure,Failure,True,2020-06-29 16:40:57,anonymous

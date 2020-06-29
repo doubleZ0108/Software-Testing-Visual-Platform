@@ -35,7 +35,6 @@ class question2:
 
     @staticmethod
     def commission_method_test(request):
-        print('here')
         arg_list = [request['host'], request['display'], request['peripheral']]
         sales, commission = commission_atom(arg_list)
         return {'sales': sales, 'commission': commission}

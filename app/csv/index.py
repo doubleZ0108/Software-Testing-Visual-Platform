@@ -3,12 +3,13 @@ import os
 BASE_DIR = os.path.dirname(__file__)
 
 csv_dir = {
-    'calendar': ['boundary', 'equivalence-weak-general', 'equivalence-strong-general', 'equivalence-weak-robust', 'equivalent-strong-robust'],
+    'calendar': ['boundary', 'equivalence-weak-general', 'equivalence-strong-general', 'equivalence-weak-robust',
+                 'equivalent-strong-robust'],
     'triangle': ['boundary', 'equivalence'],
     'commission': ['boundary'],
     'charge': ['boundary', 'equivalence', 'decision'],
     'sales': ['statement', 'judge', 'condition', 'judge-condition', 'condition-combination'],
-    'printer': ['transition-tree']
+    'printer': ['printer', 'printer-robust']
 }
 
 calendar = {
@@ -44,7 +45,7 @@ sales = {
 
 printer = {
     'printer': BASE_DIR + '/q6/printer-transition-tree.csv',
-    'printer-robust': BASE_DIR + '/q6/printer-transition-tree.csv'
+    'printer-robust': BASE_DIR + '/q6/printer-transition-tree-robust.csv'
 }
 
 csv_dir2 = {
