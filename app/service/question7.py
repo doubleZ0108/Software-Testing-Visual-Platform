@@ -8,7 +8,7 @@ def charge_atom(arg_list):
     talk_time_month, unpaid_num_year, unpaid_cost_across_year, pay_method = \
         arg_list[0], arg_list[1], arg_list[2], arg_list[3]
     cost = monthly_fee
-    if talk_time_month <= 0 or unpaid_num_year < 0 or pay_method not in pay_method_list or unpaid_cost_across_year < 0:
+    if talk_time_month <= 0 or unpaid_num_year < 0 or unpaid_num_year > 11 or pay_method not in pay_method_list or unpaid_cost_across_year < 0:
         return 'error'
     if talk_time_month <= 60 & unpaid_num_year <= 1:
         cost += talk_time_month * cost_per_min * 0.01
@@ -42,5 +42,6 @@ class question7:
 
     @staticmethod
     def charge_method_test(request):
-        arg_list = [request['talk_time_month'],request['unpaid_num_year'],request['unpaid_cost_across_year'],request['pay_method']]
+        arg_list = [request['talk_time_month'], request['unpaid_num_year'], request['unpaid_cost_across_year'],
+                    request['pay_method']]
         return charge_atom(arg_list)
