@@ -7,7 +7,7 @@ model = api.model('Comission', model=model)
 
 
 @api.route('/commission/<method_type>')
-@api.param('method_type', 'boundary')
+@api.param('method_type', 'boundary-input | boundary-output')
 @api.response(404, 'Method not found')
 class Calendar(Resource):
     @api.doc('Commission Problem')

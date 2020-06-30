@@ -1,0 +1,14 @@
+TestCaseID,Host,Display,Peripheral,ExpectedOutput1,ActualOutput1,ExpectedOutput2,ActualOutput2,Correctness,Time,TesterName
+0,0,1,1,error,error,error,error,True,2020-06-30 15:23:22,anonymous
+1,1,1,1,100,100,10.0,10.0,True,2020-06-30 15:23:22,anonymous
+2,2,1,1,125,125,12.5,12.5,True,2020-06-30 15:23:22,anonymous
+3,5,5,5,500,500,50.0,50.0,True,2020-06-30 15:23:22,anonymous
+4,9,10,10,975,975,97.5,97.5,True,2020-06-30 15:23:22,anonymous
+5,10,10,10,1000,1000,100.0,100.0,True,2020-06-30 15:23:22,anonymous
+6,11,10,10,1025,1025,153.75,153.75,True,2020-06-30 15:23:22,anonymous
+7,14,14,14,1400,1400,210.0,210.0,True,2020-06-30 15:23:22,anonymous
+9,17,18,18,1775,1775,266.25,266.25,True,2020-06-30 15:23:22,anonymous
+10,18,18,18,1800,1800,270.0,270.0,True,2020-06-30 15:23:22,anonymous
+11,19,18,18,1825,1825,365.0,365.0,True,2020-06-30 15:23:22,anonymous
+12,70,80,90,8200,8200,1640.0,1640.0,True,2020-06-30 15:23:22,anonymous
+13,71,80,90,error,error,error,error,True,2020-06-30 15:23:22,anonymous

@@ -6,7 +6,7 @@ csv_dir = {
     'calendar': ['boundary', 'equivalence-weak-general', 'equivalence-strong-general', 'equivalence-weak-robust',
                  'equivalent-strong-robust'],
     'triangle': ['boundary', 'equivalence'],
-    'commission': ['boundary'],
+    'commission': ['boundary-input', 'boundary-output'],
     'charge': ['boundary', 'equivalence', 'decision'],
     'sales': ['statement', 'judge', 'condition', 'judge-condition', 'condition-combination'],
     'printer': ['printer', 'printer-robust']
@@ -26,7 +26,8 @@ triangle = {
 }
 
 commission = {
-    'boundary': BASE_DIR + '/q2/commission-boundary.csv'
+    'boundary-input': BASE_DIR + '/q2/commission-boundary.csv',
+    'boundary-output': BASE_DIR + '/q2/commission-boundary-output.csv'
 }
 
 charge = {

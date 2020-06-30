@@ -9,11 +9,11 @@ def commission_atom(arg_list):
         return 'error', 'error'
     commission = host_num * host_price + display_num * display_price + peripheral_num * peripheral_price
     if commission <= 1000:
-        return commission, int(commission * 0.1)
+        return commission, float('%.2f' % (commission * 0.1))
     elif commission <= 1800:
-        return commission, int(commission * 0.15)
+        return commission, float('%.2f' % (commission * 0.15))
     else:
-        return commission, int(commission * 0.2)
+        return commission, float('%.2f' % (commission * 0.2))
 
 
 class question2:
