@@ -1,2 +1,11 @@
 TestCaseID,MonthTalkTime,YearUnpaidNum,UnpaidCostAcrossYear,PayMethod,ExpectedOutput,ActualOutput,Correctness,Time,TesterName
-0,100,2,0,Alipay,25.45,25.45,True,2020-06-28 17:36:26,anonymous
+0,30,1,0,Alipay,29.455,29.455,True,2020-06-30 11:11:47,anonymous
+1,30,3,0,Alipay,29.5,29.5,True,2020-06-30 11:11:47,anonymous
+2,90,5,0,Alipay,38.5,38.5,True,2020-06-30 11:11:47,anonymous
+3,90,2,0,Alipay,38.2975,38.2975,True,2020-06-30 11:11:47,anonymous
+4,150,3,0,Alipay,47.05,47.05,True,2020-06-30 11:11:47,anonymous
+5,150,6,0,Alipay,47.5,47.5,True,2020-06-30 11:11:47,anonymous
+6,240,3,0,Alipay,60.1,60.1,True,2020-06-30 11:11:47,anonymous
+7,240,8,0,Alipay,61.0,61.0,True,2020-06-30 11:11:47,anonymous
+8,320,6,0,Alipay,71.56,71.56,True,2020-06-30 11:11:47,anonymous
+9,320,11,0,Alipay,73.0,73.0,True,2020-06-30 11:11:47,anonymous

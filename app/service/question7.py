@@ -47,7 +47,7 @@ def charge_atom_v2(arg_list):
     else:
         cost += talk_time_month * cost_per_min
     cost += unpaid_cost_across_year * 0.05
-    return cost
+    return float('%.5f' % cost)
 
 
 code_v = {

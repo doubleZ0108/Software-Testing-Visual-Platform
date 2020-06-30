@@ -16,6 +16,7 @@ def df_update(df, csv_path, actual_outputs, tester_name):
     df['Correctness'] = None
     if output_num == 1:
         df['ActualOutput'] = actual_outputs[0]
+        df['ExpectedOutput'] = df['ExpectedOutput'].astype(str)
         df['ActualOutput'] = df['ActualOutput'].astype(str)
         df.loc[df['ExpectedOutput'] != df['ActualOutput'], 'Correctness'] = False
     else:
