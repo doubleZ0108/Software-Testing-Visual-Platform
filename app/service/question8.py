@@ -20,7 +20,8 @@ def sales_atom(arg_list):
     if commission_rate == 0:
         return 'no commission', 'no commission'
     else:
-        return commission_rate, float('%.2f' % (annual_sales / commission_rate))
+        result = annual_sales / commission_rate
+        return commission_rate, float('%.2f' % result)
 
 
 class question8:
@@ -30,7 +31,7 @@ class question8:
     @staticmethod
     def sales(method_type):
         csv_path = sales_index[method_type]
-        df, arg_start, arg_end = df_read(csv_path,arg_end_label='ExpectedOutput1')
+        df, arg_start, arg_end = df_read(csv_path, arg_end_label='ExpectedOutput1')
         output1 = []
         output2 = []
         for i in range(0, len(df)):
@@ -43,4 +44,5 @@ class question8:
     @staticmethod
     def sales_method_test(request):
         arg_list = [request['annual_sales'], request['leave_days'], request['rate_cash_to_account']]
-        return sales_atom(arg_list)
+        commission_rate, commission = sales_atom(arg_list)
+        return {'commission_rate': commission_rate, 'commission': commission}
