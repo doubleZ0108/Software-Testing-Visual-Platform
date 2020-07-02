@@ -9,9 +9,6 @@ from app.csv.index import printer as printer_index
 
 @author: doubleZ
 
-@modify: dasein
-
-@create: 2020/06/29 
 '''
 from state_machine import State, Event, acts_as_state_machine, after, before, InvalidStateTransition
 
@@ -118,5 +115,8 @@ class question6:
     @staticmethod
     def printer_method_test(request):
         arg_list = request['command']
-        state = printer_atom(arg_list).capitalize()
+        state = printer_atom([arg_list]).capitalize()
         return {'state': state_dir[state], 'description': state}
+
+
+# print(printer_atom(['S133']))

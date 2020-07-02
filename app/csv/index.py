@@ -33,7 +33,8 @@ commission = {
 charge = {
     'boundary': BASE_DIR + '/q7/charge-boundary.csv',
     'equivalence': BASE_DIR + '/q7/charge-equivalence.csv',
-    'decision': BASE_DIR + '/q7/charge-decision.csv'
+    'decision': BASE_DIR + '/q7/charge-decision.csv',
+    'final': BASE_DIR + '/q7/charge.csv'
 }
 
 sales = {

@@ -6,7 +6,7 @@ TestCaseID,MonthTalkTime,YearUnpaidNum,UnpaidCostAcrossYear,PayMethod,ExpectedOu
 4,44639,0,0,Alipay,6519.9745,6519.9745,True,2020-06-30 11:11:55,anonymous
 5,44640,0,0,Alipay,6520.12,6520.12,True,2020-06-30 11:11:55,anonymous
 6,44641,0,0,Alipay,error,error,True,2020-06-30 11:11:55,anonymous
-7,60,-1,0,Alipay,error,error,True,2020-06-30 11:11:55,anonymous
+7,60,-1,0, Alipay,error,error,True,2020-06-30 11:11:55,anonymous
 8,60,1,0,Alipay,33.91,33.91,True,2020-06-30 11:11:55,anonymous
 9,60,2,0,Alipay,34.0,34.0,True,2020-06-30 11:11:55,anonymous
 10,60,1,-1,Alipay,error,error,True,2020-06-30 11:11:55,anonymous

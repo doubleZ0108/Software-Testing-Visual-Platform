@@ -7,7 +7,7 @@ model = api.model('Commission', model=model)
 
 
 @api.route('/charge/<method_type>')
-@api.param('method_type', 'boundary | equivalence | decision')
+@api.param('method_type', 'boundary | equivalence | decision | final')
 @api.response(404, 'Method not found')
 class Calendar(Resource):
     @api.doc('Charge Problem')
